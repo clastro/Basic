@@ -30,3 +30,5 @@ arr[arr % 2 == 1]
 # Q. Replace all odd numbers in arr with -1 Input:
 
 arr[arr % 2 == 1] = -1
+arr.put([1,3,5,7,9],-1)
+np.where(arr % 2 ==1,-1,arr)
