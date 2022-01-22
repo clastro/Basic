@@ -32,3 +32,14 @@ arr[arr % 2 == 1]
 arr[arr % 2 == 1] = -1
 arr.put([1,3,5,7,9],-1)
 np.where(arr % 2 ==1,-1,arr)
+
+
+# Q. Convert a 1D array to a 2D array with 2 rows Input:
+
+A = np.arange(10)
+
+# Desired Output:
+#> array([[0, 1, 2, 3, 4],
+#>        [5, 6, 7, 8, 9]])
+
+A.reshape(2,-1)
