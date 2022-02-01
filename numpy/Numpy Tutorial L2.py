@@ -49,3 +49,15 @@ b = np.array([7,2,10,2,7,4,9,4,9,8])
 
 np.where(a==b)
 
+# Q. How to extract all numbers between a given range from a numpy array?
+
+# (array([6, 9, 10]),)
+
+a = np.array([2, 6, 1, 9, 10, 3, 27])
+
+a[(a>5) & (a <=10)] #내가 쓴 답
+index = np.where((a >= 5) & (a <= 10))
+a[index]
+index = np.where(np.logical_and(a>=5, a<=10))
+a[index]
+
