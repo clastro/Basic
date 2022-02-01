@@ -61,3 +61,23 @@ a[index]
 index = np.where(np.logical_and(a>=5, a<=10))
 a[index]
 
+# Q. Swap rows 1 and 2 in the array
+
+arr = np.arange(9).reshape(3,3)
+
+#내가 쓴 답
+
+swap_0_1 = arr[0,1] 
+arr[0,1] = arr[1,1]
+arr[1,1] = swap_0_1
+
+swap_0_2 = arr[0,2] 
+arr[0,2] = arr[1,2]
+arr[1,2] = swap_0_2
+
+swap_0_0 = arr[0,0] 
+arr[0,0] = arr[1,0]
+arr[1,0] = swap_0_0 
+
+# Solution (정말 간단)
+arr[[1,0,2], :] 
