@@ -1,3 +1,6 @@
+import sqlite3
+import pandas as pd
+
 class DBconn():
     
     def __init__(self):
@@ -16,3 +19,6 @@ class DBconn():
         columns = [col[0] for col in self.cursor.description]
         df = pd.DataFrame(self.cursor.fetchall(),columns=columns)
         return df
+    
+if __name__ == '__main__':
+    main()
