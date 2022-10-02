@@ -17,3 +17,9 @@ df_group_ads["level"] = pd.cut(df_group_ads["subscribers"], bins, right=False, l
 df_group_ads.groupby('level').mean()
 
 ### 한 번에 테이블 안에 다른 칼럼까지 출력이 됨.
+
+### 3. 20등분
+
+df_data_group['group'] = pd.cut(df_data_group['patient_id'].astype(float),20,labels=list(range(0,20)))
+
+### 환자 아이디 칼럼 기준 20개씩 나누는데 label은 0부터 19까지로 할 것
