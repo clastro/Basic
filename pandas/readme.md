@@ -9,3 +9,9 @@ A['col2'].fillna(A['col1'], inplace=True)
 ```
 df_data_group['patient_id'].astype('category').cat.codes
 ```
+
+### 시간 계산하기 (timedelta)
+
+```
+df_afib_in_afib[df_afib_in_afib['patient_id'] == pid]['time'].min() - timedelta(days=365)
+```
