@@ -13,3 +13,12 @@ class MyClass:
 class Car:
     def __init__(self):
         print("자동차 제작 완료")
+
+#2-1. __call__ 함수로 호출
+class MyFunc:
+    def __call__(self, *args, **kwargs):
+        print("호출됨")
+        
+
+f = MyFunc()
+f()
