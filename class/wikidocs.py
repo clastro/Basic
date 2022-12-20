@@ -22,3 +22,13 @@ class MyFunc:
 
 f = MyFunc()
 f()
+
+#2-2. 객체 접근 사용자 함수
+
+class Stock:
+    def __getattribute__(self, item):
+        print(item, "객체에 접근하셨습니다.")
+
+
+s = Stock()
+s.data
