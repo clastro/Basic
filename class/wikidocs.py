@@ -7,3 +7,9 @@ class MyClass:
 
     def get_count(self):
         return MyClass.count
+
+#2. Magic Method or Special Method ( __로 시작해서 __로 끝나는 함수)
+
+class Car:
+    def __init__(self):
+        print("자동차 제작 완료")
