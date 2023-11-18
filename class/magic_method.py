@@ -23,3 +23,5 @@ class Vector(object):
 
     def __bool__(self):
         return bool(max(self._x, self._y))
+
+### v1 = Vector(5, 2)
